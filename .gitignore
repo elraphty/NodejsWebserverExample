@@ -1,2 +1,4 @@
 node_modules/
 server.log
+package-lock.json
+server.js__jb_tmp__

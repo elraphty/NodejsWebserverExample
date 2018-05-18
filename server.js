@@ -23,6 +23,7 @@ app.use((req,res,next)=>{
 next();
 });
 
+//Middle ware code
 // app.use((req,res,next)=>{
 // res.render("maintenance.hbs");
 // });
@@ -56,6 +57,13 @@ app.get("/about",(req,res)=>{
     pageTitle:"About Page",
   });
 });
+
+app.get("/portfolio",(req,res)=>{
+  res.render("potfolio.hbs",{
+    pageTitle:"Portfolio Page",
+  });
+});
+
 
 
 app.listen(port,()=>{
